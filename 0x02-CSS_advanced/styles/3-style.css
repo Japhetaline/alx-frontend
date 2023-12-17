@@ -1,0 +1,44 @@
+html {
+	/* set the scroll behavior with a timing */
+	scroll-behavior: smooth;
+}
+
+/* select the document's root element */
+:root {
+	/* define variables with specific colors */
+	--color-primary: #d73953;
+	--color-black: #090909;
+	--color-white: #ffffff;
+	--color-light-grey: #f3f3f3;
+	--color-dark-grey: #353535;
+	--text-color: var(--color-black);
+}
+
+body {
+	/* set the foreground color text*/
+	color: var(--text-color);
+}
+
+/* anchor elements */
+a {
+	/* set the color text */
+	color: var(--text-color);
+}
+
+/* all elements with class visually-hidden */
+.visually-hidden {
+	/* hide the element */
+	display: none;
+}
+
+/* all elements with class card-category */
+.card-category {
+	/* set the color text */
+	color: var(--color-primary);
+}
+
+/* all elements with class section-tagline*/
+.section-tagline {
+	/* set the color text */
+	color: var(--color-primary);
+}

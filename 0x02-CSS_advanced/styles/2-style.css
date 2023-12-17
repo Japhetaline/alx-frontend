@@ -1,0 +1,33 @@
+html {
+	/* set the scroll behavior with a timing */
+	scroll-behavior: smooth;
+}
+
+body {
+	/* set the foreground color text*/
+	color: #161616;
+}
+
+/* anchor elements */
+a {
+	/* set the color text */
+	color: #161616;
+}
+
+/* all elements with class visually-hidden */
+.visually-hidden {
+	/* hide the element */
+	display: none;
+}
+
+/* all elements with class card-category */
+.card-category {
+	/* set the color text */
+	color: #D73953;
+}
+
+/* all elements with class section-tagline*/
+.section-tagline {
+	/* set the color text */
+	color: #D73953;
+}
