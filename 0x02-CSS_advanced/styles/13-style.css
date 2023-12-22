@@ -1,0 +1,132 @@
+html {
+	/* set the scroll behavior with a timing */
+	scroll-behavior: smooth;
+	/* set the font size (letter size) */
+	font-size: 62.5%;
+}
+
+/* select the document's root element */
+:root {
+	/* define variables with specific colors */
+	--color-primary: #d73953;
+	--color-black: #090909;
+	--color-white: #ffffff;
+	--color-light-grey: #f3f3f3;
+	--color-dark-grey: #353535;
+	--text-color: var(--color-black);
+	/* define variable with specific font families*/
+	--font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--font-family-title: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/* define variable for font-size custom properties*/
+	--font-size-small: 1.2rem;
+	--font-size-medium: 1.6rem;
+	--font-size-large: 1.8rem;
+	--font-size-x-large: 2.3rem;
+	--font-size-xx-large: 4.8rem;
+	/* define variables for font-weight custom properties */
+	--font-weight-regular: 400;
+	--font-weight-bold: 700;
+	/* denife variables for line-heiht custom properties */
+	--line-height-small: 1.2;
+	--line-height-base: 1.5;
+	--line-height-big: 1.8;
+	/* define variable to header-aling custom properties */
+	--section-header-align: center;
+	/* define variable to change the letters to uppercase */
+	--section-tagline-transform: uppercase;
+	/* define variable to change the margin in titles*/
+	--section-title-margin: 0;
+	/* define variable to change the color in titles*/
+	--section-title-color: var(--color-black);
+}
+
+body {
+	/* set the foreground color text*/
+	color: var(--text-color);
+	/* set the font family (letter type) */
+	font-family: var(--font-family-base);
+	/* set the font size (letter size) */
+	font-size: var(--font-size-medium);
+	/* set the font-weight (boldness letter)*/
+	font-weight: var(--font-weight-regular);
+	/* set the line-height (spaces between boxes) */
+	line-height: var(--line-height-base);
+}
+
+/* all title elements */
+h1, h2, h3, h4, h5, h6 {
+	/* set the font family (letter type)*/
+	font-family: var(--font-family-title);
+	/* set the font weight (boldness type)*/
+	font-weight: var(--font-weight-bold);
+}
+
+/* anchor elements that have a link in the href attr*/
+a:link {
+	/* set the color text */
+	color: var(--text-color);
+	/* set the decoration in anchor element (without underscore under text) */
+	text-decoration: none;
+}
+
+/* anchor elements that have clicked or visited before */
+a:visited {
+	/* set the text style */
+	font-style: italic;
+}
+
+/* anchor elements that the mouse is over */
+a:hover {
+	/* set the decortation (with a underscore under text) */
+	text-decoration: underline;
+}
+
+/* anchor elements that was clicked when the mouse button has been depressed and before the click is over.*/
+a:active {
+	/* set the background color */
+	background-color: var(--color-light-grey);
+}
+
+/* all elements with class visually-hidden */
+.visually-hidden {
+	/* hide the element */
+	display: none;
+}
+
+/* all elements with class card-category */
+.card-category {
+	/* set the color text */
+	color: var(--color-primary);
+}
+
+/* all elements with class section-header */
+.section-header {
+	/* set the horizontal align */
+	text-align: var(--section-header-align);
+}
+
+/* all elements eith class section-title */
+.section-title {
+	/* set the letter style */
+	font-family: var(--font-family-title);
+	/* set the letter size */
+	font-size: var(--font-size-xx-large);
+	/* set the letter weight */
+	font-weight: var(--font-weight-bold);
+	/* set the margin (top, button, left, right) */
+	margin: var(--section-title-margin);
+	/* set the text color */
+	color: var(--section-title-color);
+}
+
+/* all elements with class section-tagline*/
+.section-tagline {
+	/* set the color text */
+	color: var(--color-primary);
+	/* set the letter style  */
+	font-family: var(--font-family-title);
+	/* set the text to uppercase */
+	text-transform: var(--section-tagline-transform);
+	/* set the letters weight */
+	font-weight: var(--font-weight-bold);
+}
